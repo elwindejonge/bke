@@ -1,0 +1,220 @@
+/* Importeren van fonts */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+/*
+    padding: 0;
+ * Reset.css - Om alle browsers op dezelfde instellingen te krijgen
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h'Indie Flower', cursivequote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+ieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+#speelveld table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    background-color: #ffffff;
+}
+
+/*
+ * Onze CSS volgt hieronder
+ */
+body {
+    font-family: Tahoma, Verdana;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;s
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer #speelveld {
+    float: left;
+    margin: 0;
+    padding: 50px;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    max-width: 600px;
+    background: url('../img/background-playfield.jpg') no-repeat;
+}
+
+#speelveld table {
+    border-collapse: collapse;
+    width: 600px;
+    height: 600px;
+}
+
+#speelveld table tr td {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#speelveld table tr:first-child {
+    border-bottom: 1px solid grey;
+}
+
+#speelveld table tr:last-child {
+    border-top: 1px solid grey;
+}
+
+#speelveld table tr td:first-child {
+    border-right: 1px solid grey;
+}
+
+#speelveld table tr td:last-child {
+    border-left: 1px solid grey;
+}
+
+#mainContainer #game-info {
+    float: left;
+    width: 280px;
+    margin-left:20px;
+    height: 700px;
+}
+
+#game-info h1 {
+    width: 100%;
+    border-bottom: 1px solid black;
+    color: green;
+    font-size: 48px;
+}
+
+#game-info table.players-turn {
+    width: 280px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#game-info table.players-turn tr td {
+    font-size: 32px;
+    font-family: 'Indie Flower';
+}
+
+#game-info table.players-turn tr td:last-child {
+    font-size: 50px;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+}
+
+#game-info table.players-turn tr td:first-child {
+    width: 30px;
+}
+
+#game-info table.rounds-info {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 0;
+    font-family: 'Indie Flower';
+    font-size: 30px;
+}
+
+#game-info table.rounds-info tr td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#game-info table.rounds-info tr td:last-child {
+    text-align: center;
+}
+
+button.button {
+    float: right;
+    padding: 10px;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    background: rgb(76,76,76); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(25%,rgba(102,102,102,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    border: 0px;
+}
+
+.bigreset {
+    float: right;
+    padding: 10px;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    background: rgb(76,76,76); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(25%,rgba(102,102,102,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    border: 0px;
+}
